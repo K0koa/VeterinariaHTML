@@ -1,0 +1,107 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+* {
+    color: black;
+}
+
+body {
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+.navbar {
+    padding: 20px;
+    font-size: 14px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: lightblue;
+    padding-bottom: 440px;
+}
+
+.navbar-left,
+.navbar-right {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.inicio,
+.ayuda,
+.sobre-nosotros,
+.contacto,
+.agendar-ahora,
+.aprende-mas,
+.crea-una-reserva {
+    font-weight: 500;
+    border-radius: 50px;
+    padding: 5px 20px 5px 20px;
+    background-color: white;
+    text-decoration: none;
+}
+
+.inicio:hover,
+.ayuda:hover,
+.sobre-nosotros:hover,
+.contacto:hover {
+    background-color: lightgray;
+}
+
+.agendar-ahora:hover,
+.crea-una-reserva:hover {
+    background-color: #FFDE42;
+}
+
+.aprende-mas:hover {
+    background-color: #181818;
+    color: white;
+}
+
+.inicio:active,
+.ayuda:active,
+.sobre-nosotros:active,
+.contacto:active,
+.agendar-ahora:active,
+.aprende-mas:active,
+.crea-una-reserva:active {
+    transform: scale(0.95);
+}
+
+.agendar-ahora {
+    background-color: yellow;
+}
+
+.principal {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    line-height: 1.2;
+    top: 160px;
+    left: 75%;
+    transform: translateX(-70%);
+    text-align: left;
+    font-size: 25px;
+    white-space: nowrap;
+}
+
+.botones{
+    font-size: 20px;
+    display: flex;
+    text-align: center;
+    gap: 30px;
+}
+
+.aprende-mas {
+    background-color: black;
+    color: white;
+}
+
+.crea-una-reserva {
+    background-color: yellow;
+}
+
+.imagen-perro {
+    position: absolute;
+    top: 150px;
+    padding-left: 20px;
+}

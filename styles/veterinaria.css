@@ -5,18 +5,36 @@
 }
 
 body {
+    display: flex;
+    flex-direction: column;
     margin: 0;
     font-family: 'Poppins', sans-serif;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+main {
+    flex: 1;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+.header {
+    background-color: rgb(198, 230, 243);
 }
 
 .navbar {
     padding: 20px;
     font-size: 14px;
+    position: relative;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: lightblue;
-    padding-bottom: 440px;
 }
 
 .navbar-left,
@@ -24,6 +42,34 @@ body {
     display: flex;
     align-items: center;
     gap: 10px;
+}
+
+.hero{
+    min-height: 500px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.logo {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+
+    display: flex;
+    align-items: center;
+    gap: 8px;
+
+    font-weight: 600;
+    font-size: 25px;
+}
+
+.logo img {
+    width: 24px;
+    height: 24px;
+
+    transform: rotate(25deg) scale(1.1);
 }
 
 .inicio,
@@ -102,7 +148,75 @@ body {
 
 .imagen-perro {
     position: absolute;
-    top: 23%;
-    transform: translateY(-23%);
-    padding-left: 10%;
+    left: 10%;
+    bottom: -4%;
+}
+
+.imagen-gato {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+}
+
+.mensaje-elegirnos {
+    max-width: 800px;
+    margin: 20px auto;
+    text-align: center;
+    line-height: 1.6;
+    font-size: 1.1rem;
+    color: #444;
+}
+
+.servicios {
+    display: flex;
+    margin: 40px auto;
+    gap: 15px;
+    justify-content: center;
+    width: 100%;
+}
+
+.consejos_atencion,
+.ayuda-veterinaria,
+.servicios-emergencia {
+    width: 300px;
+    object-fit: cover;
+}
+
+footer {
+    clear: both;
+    width: 100%;
+    padding: 20px 0;
+}
+
+.info {
+    display: flex;
+    gap: 80px;
+    justify-content: center;
+}
+
+.logo-footer {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+
+    font-size: 20px;
+}
+
+.logo-footer img {
+    width: 20px;
+    height: 20px;
+    transform: rotate(25deg) scale(1.1);
+}
+
+.contenido-contactos {
+    line-height: 17px;
+}
+
+.contenido-servicios {
+    line-height: 30px;
+}
+
+.contenido-lema {
+    max-width: 200px;
+    margin-top: -30px;
 }

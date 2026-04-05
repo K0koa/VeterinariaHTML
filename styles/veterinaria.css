@@ -183,9 +183,10 @@ img {
 }
 
 footer {
+    background-color: rgb(119, 177, 199);
     clear: both;
     width: 100%;
-    padding: 20px 0;
+    padding: 20px 0; 
 }
 
 .info {
